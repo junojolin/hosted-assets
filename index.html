@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Juno Jolin
+EMAIL: jjolin@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Juno Jolin">
+  <meta name="description" content="Personal portfolio">
+  <link rel="stylesheet" href="style.css"> <!-- you would link to an external stylesheet here! -->
+  <script src="https://kit.fontawesome.com/61b3c46e57.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><!-- you would also link to Bootstrap here! -->
+  <title>Juno's Portfolio</title>
+</head>
+<body>
+  <div id = "header">
+  <nav>
+    <img src="https://junojolin.github.io/hosted-assets/logo.png" alt="Text that says Juno Jolin" class = "logo">
+    <ul id = "sidemenu">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#certificates">Certifications</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><span class="fas fa-times" onclick="closemenu()"></span></li>
+    </ul>
+    <span class="fas fa-bars" onclick ="openmenu()"></span>
+  </nav>
+
+  <div class ="hello">
+    <p>UC Irvine Graduate </p>
+    <p>Aspiring Cybersecurity Professional</p>
+    <h1>Hi, I'm Juno Jolin</h1>
+  </div>
+</div>
+
+<!--About-->
+
+<div id="about">
+  <div class="container">
+  <div class="row">
+    <div class="about-col-1">
+      <img src= "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/University_of_California%2C_Irvine_seal.svg/1200px-University_of_California%2C_Irvine_seal.svg.png" alt = "UC Irvine Logo">
+    </div>
+    <div class="about-col-2">
+      <h1 class="sub-title">About Me</h1>
+      <p> From the Greater Bay Area. My fascination for computers began at a young age. In high school, 
+        I was the teacher's assistant and volunteer for the Introduction to Computer Science class. I also helped bring 
+        the AP Computer Science Principles class to my high school. As a UC Irvine graduate, my passion 
+        for technology has grown. I am excited to get hands-on experience and explore the cybersecurity field.</p>
+
+      <div class="tab-titles">
+        <p class="links link" onclick="opentab('education')">Education <span class="fa-solid fa-graduation-cap"></span></p>
+        <p class="links" onclick="opentab('experience')">Volunteer/Work History <span class="fa-solid fa-briefcase"></span></p>
+        <p class="links" onclick="opentab('skills')">Skills <span class="fa-solid fa-hammer"></span></p>
+    </div>
+      <div class="contents" id="skills">
+        <ul>
+          <li><span>Programming & Software Development</span><br>Experienced in Python, Java, C++, JavaScript, HTML, CSS, and MySQL. Skilled in building applications and websites
+             with a focus on clean, maintainable code. Familiar with object-oriented programming and using development tools to manage projects</li>
+          <li><span>Cybersecurity Fundamentals</span><br>Understanding of security concepts, risk management, and common vulnerabilities from the CompTIA Security+ certification. 
+            Familiar with security protocols and measures to protect systems and data.</li>
+          <li><span>Requirements Validation & Security</span><br>Familiar with validating security requirements through close analysis of user needs and system specifications, as 
+            well as communicating with stakeholders to ensure alignment with business goals and security standards, as covered in Requirement Analysis and Engineering coursework.</li>
+        </ul>
+      </div>
+        <div class="contents" id="experience">
+        <ul>
+          <li><span>The New Port Theater</span><br>Shift Lead | March 2023 - March 2024<br>
+            Customer Service Associate | August 2022 - March 2023<br>
+         Created cocktails and drinks for customers. Managed kitchen operations. Operated light, sound, and projector system. Advertised and designed information for social media. Assisted and led in event setup with coworkers and event staff.
+         </li>
+          <li><span>Boulevard 14 Cinemas</span><br>Assistant Manager | March 2021- March 2022<br>
+            Trainer | June 2019 - February 2020<br>
+            Floor Staff | June 2018 - June 2019<br>
+         Monitored day-to-day theater operations. Coordinated schedules and assigned employees’ shifts. Managed and trained employees. Reported daily ticket and concession sales. Answered questions from customers. Operated light, sound, and projector system.
+         </li>
+         <li><span>Petaluma Highschool CS Volunteer</span><br>2018-2020<br><p id="box">Coached and guided students Python coding for the Introduction to Computer Science class. Helped students devise plans on interpreting and solving coding problems.</p></li>
+        </ul>
+      </div>
+      <div class="contents tab" id="education">
+        <ul>
+          <li><span>UC Irvine</span><br>Graduated 2024 with a B.S. Computer Science. Specialization in systems and software. GPA: 3.5</li>
+          <li><span>Santa Rosa Junior College</span><br>Partial completion of General Education. Transfered 2022. GPA: 3.76</li>
+          <li><span>Petaluma Highschool</span><br>Earned a highschool Diploma. Graduated Winter 2019. GPA: 4.0</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Certificates-->
+
+<div id = "certificates">
+<div class = "container full">
+  <div class="row g-3">
+    <h1>Certifications</h1>
+    <!--IT--> <!---->
+    <div class="col-md-4 col-6">
+      <div class="card h-100">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLK8bohNkxhOF-RJ0KrH_3EqnuMmvNr-G6A&s" class="card-img-top boxImage" alt="CompTIA Security+ Logo">
+        <div class="card-body">
+          <h2 class="card-title">CompTIA Security+</h2>
+          <p class="card-text">
+            CompTIA Security+ emphasizes hands-on practical skills, ensuring the security professional is better prepared to problem solve a wider variety of issues. It is the first security
+             certification IT professionals should earn and establishes the core knowledge required of any cybersecurity role to provide a springboard to intermediate-level cybersecurity jobs.
+              Cybersecurity professionals with CompTIA Security+ know how to address security incidents, not just identify them.
+          </p>
+          <h3 class = "asterik">Completed January 3, 2025 | Expires January 8, 2028</h3>
+          <a href="https://www.credly.com/badges/caa128fc-cdb8-41ee-9ff1-0b3720ce4049" class="btn btn-outline-primary">View Certificate</a>
+        </div>
+      </div>
+    </div>
+    <!--Cybersecurity-->
+    <div class="col-md-4 col-6">
+      <div class="card h-100">
+        <img src="https://comptiawebsite.blob.core.windows.net/webcontent/images/default-source/siteicons/logocysaplus-01.svg" class="card-img-top boxImage" alt="Google Cybersecurity Professional Logo">
+        <div class="card-body">
+          <h2 class="card-title">CompTIA CySA+ (In Progress)</h2>
+          <p class="card-text">
+            CompTIA Cybersecurity Analyst (CySA+) is a certification for cyber professionals tasked with incident detection, 
+            prevention and response through continuous security monitoring.
+          </p>
+          <h3 class = "asterik">*View certificate will not show the certificate as it is incomplete,
+            but will link to the websites for the course.</h3>
+          <a href="https://www.comptia.org/certifications/cybersecurity-analyst" class="btn btn-outline-primary">View Certificate*</a>
+        </div>
+      </div>
+    </div>
+    <!--Web Design-->
+    <div class="col-md-4 col-6">
+      <div class="card h-100">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/FreeCodeCamp_logo.svg/2560px-FreeCodeCamp_logo.svg.png" class="card-img-top boxImage" alt="Google IT Professional Support Logo">
+        <div class="card-body">
+          <h2 class="card-title">freeCodeCamp Reponsive Web Design Certificate</h2>
+          <p class="card-text">
+            In this Responsive Web Design Certification, you'll learn the languages that developers use to 
+          build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.
+          </p>
+          <h3 class = "asterik">Completed August 1, 2022</h3>
+          <a href="https://www.freecodecamp.org/certification/JunoJ/responsive-web-design" class="btn btn-outline-primary">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Portfolio-->
+
+<div id = "portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.jpg?format=jpg&width=960" alt = "Code background">
+        <div class = "layer">
+          <h2>TryHackMe</h2>
+          <p>An interactive cybersecurity learning platform offering hands-on labs and challenges across various topics like penetration testing,
+             web security, and more. It provides guided learning paths and real-world scenarios, making it ideal for both beginners and experienced
+              professionals looking to build and improve their skills in ethical hacking and cybersecurity.
+          </p>
+          <a href="https://tryhackme.com/p/jjolin" title="TryHackMe Profile"><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+        </div>
+    </div>
+       <div class="work">
+        <img src="https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.jpg?format=jpg&width=960" alt = "Code background">
+         <div class = "layer">
+          <h2>Fabflix W.I.P (Link will not work yet)</h2>
+          <p>This link will not work yet as I occured difficulties linking a previous full-stack movie website project called Fabflix.</p>
+          <a href="#" title="projectTwo"><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!--Contact-->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class = "sub-title">Contact Me</h1>
+        <p><span class="fa-regular fa-envelope"></span> jjolin@uci.edu</p>
+        <!--<p><span class="fa-solid fa-phone"></span> (012) 345-6789</p>-->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/juno-jolin-976439264" title="linkedIn"><span class="fa-brands fa-linkedin"></span></a>
+          <a href="https://github.com/jkjolin" title="gitHub"><span class="fa-brands fa-github"></span></a>
+        </div>
+        <!--<a href="" download class="btn btn2">Download Resume</a>-->
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <label for="aCheckOne" class = "erase"></label>
+          <label for="aCheckTwo" class = "erase"></label>
+          <label for="aCheckThree" class = "erase"></label>
+          <input type="text" name="Name" placeholder="Your Name" id = "aCheckOne" required>
+          <input type="email" name="Email" placeholder="Your Email" id = "aCheckTwo" required>
+          <textarea name="Message" rows="6" placeholder="Your Message" id = "aCheckThree"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="contactScript.js"></script>
+</body>
+</html>

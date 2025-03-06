@@ -383,7 +383,7 @@ nav ul li a:hover::after{
       }
     
       nav ul .fas{
-        position: fixed;
+        position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;

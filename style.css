@@ -362,7 +362,6 @@ nav ul li a:hover::after{
         font-size: 25px;
         color: black;
         cursor: pointer;
-        position: fixed;
       }
     
       nav ul{

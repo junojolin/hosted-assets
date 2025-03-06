@@ -343,7 +343,7 @@ nav ul li a:hover::after{
     display: none;
 }
 
-@media (max-width: 640px){
+@media (max-width: 400px){
     #header{
         background-image: url(https://junojolin.github.io/hosted-assets/phone-backgroundUpdated.png);
       }
